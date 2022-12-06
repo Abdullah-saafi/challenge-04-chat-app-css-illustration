@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: hsl(270, 20%, 96%);
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.right-bg {
+  height: 40rem;
+  width: 25rem;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 0 0 40rem 40rem;
+  position: absolute;
+  z-index: -1;
+}
+.left-bg {
+  height: 38rem;
+  width: 25rem;
+  background-color: rgba(238, 231, 243, 0.485);
+  border-radius: 0 0 40rem 40rem;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.mobile {
+  padding: 8px;
+  width: 15rem;
+  border-radius: 18px;
+  background-color: white;
+  margin-left: 18rem;
+  margin-top: 100px;
+}
+.profile {
+  height: 3rem;
+  position: relative;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 18px 18px 10px 10px;
+  padding: 15px;
+  overflow: hidden;
+}
+.camera {
+  width: 8rem;
+  border-radius: 50px;
+  background-color: white;
+  height: 1.7rem;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.profi-detail {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 1.2rem;
+  font-size: 0.7rem;
+}
+
+.img img {
+  width: 2rem;
+  border-radius: 2rem;
+  border: 2px solid white;
+  margin: 0 10px;
+}
+.profile-text h1 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.profile-text h2 {
+  font-size: 0.6rem;
+  color: hsl(276, 100%, 81%);
+  font-weight: 400;
+}
+.dots {
+  margin-left: auto;
+}
+
+.chats {
+  background-color: hsl(270, 20%, 96%);
+  padding: 10px;
+  border-radius: 0 0 18px 18px;
+}
+
+.left-chat {
+  background-color: hsl(276deg 32% 93%);
+  color: hsl(276, 55%, 52%);
+  font-size: 0.6rem;
+  font-weight: 500;
+  width: 8.5rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.right-chat {
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+  font-size: 0.5rem;
+  font-weight: 500;
+  width: 7.6rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+
+.msg-03 {
+  display: flex;
+  background-color: hsl(270, 20%, 96%);
+  justify-content: flex-end;
+}
+
+.msg-03 img {
+  width: 2.5rem;
+  border-radius: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.msg-05 {
+  width: 5rem;
+}
+
+.deal {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: hsl(276, 100%, 81%);
+  width: 9rem;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  margin-bottom: 0.3rem;
+}
+input[type="radio"] {
+  outline: hsl(289, 100%, 72%);
+  accent-color: hsl(293, 100%, 63%);
+}
+
+.deal label {
+  font-size: 0.6rem;
+  padding-left: 10px;
+}
+
+.deal h2 {
+  font-size: 0.8rem;
+  text-align: left;
+  margin-left: auto;
+  color: white;
+}
+
+.textarea label {
+  position: relative;
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 13rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+::placeholder {
+  font-size: 0.7rem;
+  color: hsl(206, 6%, 79%);
+}
+
+button {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  right: 5px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(271, 36%, 24%);
+  color: white;
+  font-size: 0.7rem;
+}
+
+.main-text {
+  max-width: 25rem;
+  margin-left: 7rem;
+}
+
+.main-text h1 {
+  font-size: 2.5rem;
+  color: hsl(271, 36%, 24%);
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.main-text p {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+.attribution {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 375px) {
+  
+  .right-bg {
+    transform: translateX(-50%);
+  }
+  .left-bg{
+    visibility: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile{
+    padding: 8px;
+    margin: 6rem 1rem;
+  }
+  .main-text {
+    max-width: 25rem;
+    text-align: center;
+    margin-left: 1rem;
+    padding: 30px;
+  }
+}
